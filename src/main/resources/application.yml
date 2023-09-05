@@ -3,4 +3,20 @@ server:
   error:
     # e.g. when an 500 error is displayed will have the underlying error message
     include-message: always
+spring:
+  application:
+    name: springboot-admin-8
+logging:
+  file:
+    name: logs/eobao-online-data-app.log
+    max-history: 5
+    max-size: 10MB
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    com.hackearth: DEBUG
+    org.hibernate: INFO
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
 
