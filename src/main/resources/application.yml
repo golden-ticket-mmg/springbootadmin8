@@ -8,7 +8,7 @@ spring:
     name: springboot-admin-8
 logging:
   file:
-    name: logs/eobao-online-data-app.log
+    name: logs/springboot-admin-8.log
     max-history: 5
     max-size: 10MB
   level:
